@@ -343,11 +343,26 @@
       <Project>{CCDB86E2-3EEA-1941-F10E-EDD3D948F30D}</Project>
       <Name>4_wings_of_camus</Name>
     </ProjectReference>
+    <ProjectReference Include="4_wings_of_camus.csproj">
+      <Project>{CCDB86E2-3EEA-1941-F10E-EDD3D948F30D}</Project>
+      <Name>4_wings_of_camus</Name>
+    </ProjectReference>
+    <ProjectReference Include="4_wings_of_camus.Plugins.csproj">
+      <Project>{2D5AB2AA-D28B-1793-3E35-CC09B7BAF971}</Project>
+      <Name>4_wings_of_camus.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="4_wings_of_camus.Editor.Plugins.csproj">
+      <Project>{C90D5F94-5236-5F0B-591A-42E2CE52881F}</Project>
+      <Name>4_wings_of_camus.Editor.Plugins</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Packages\com.unity.standardevents\Editor\Importer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\epyphany\ReadMe.txt" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\Alert.uxml" />

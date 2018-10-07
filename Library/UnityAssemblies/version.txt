@@ -105,3 +105,6 @@ G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll
+G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll
+G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
+G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
