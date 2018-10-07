@@ -17,12 +17,11 @@ namespace UnityStandardAssets.Utility
 
         private void DestroyNow()
         {
-            
             if (m_DetachChildren)
             {
                 transform.DetachChildren();
             }
-            Destroy(gameObject);
+            DestroyObject(gameObject);
         }
     }
 }

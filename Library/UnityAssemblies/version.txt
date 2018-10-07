@@ -1,4 +1,4 @@
-2018.2.10f1:3.3.0.2
+2018.2.11f1:3.3.0.2
 StandaloneWindows64
 G:\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll
 G:\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll
@@ -96,6 +96,9 @@ G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll
 G:\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll
+G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll
+G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
+G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll
@@ -105,6 +108,3 @@ G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll
 G:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll
-G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll
-G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
-G:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
