@@ -4,8 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - deathPrefab: {fileID: 1245510858020270, guid: 5c7bd524971b3dd4f80c19b9af304efc,
-      type: 2}
+  - garbageBin: {instanceID: 0}
+  - deathFX: {fileID: 1245510858020270, guid: 5c7bd524971b3dd4f80c19b9af304efc, type: 2}
+  - hitFX: {fileID: 1428531425629418, guid: f3f06b0b41b2b54459d20608e8825fd5, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

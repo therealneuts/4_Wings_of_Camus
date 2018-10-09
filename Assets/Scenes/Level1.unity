@@ -325,21 +325,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 218365188306086086, guid: e3d0fc632f4c859448026f93cbf5df0e,
-        type: 2}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 218365188306086086, guid: e3d0fc632f4c859448026f93cbf5df0e,
-        type: 2}
-      propertyPath: m_DrawHeightmap
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 218365188306086086, guid: e3d0fc632f4c859448026f93cbf5df0e,
-        type: 2}
-      propertyPath: m_HeightmapPixelError
-      value: 25.6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3d0fc632f4c859448026f93cbf5df0e, type: 2}
   m_IsPrefabAsset: 0
@@ -684,6 +669,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1416958367264042, guid: db333e5d407f99f48bcd25dd42c52bd1, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198488337352485812, guid: db333e5d407f99f48bcd25dd42c52bd1,
+        type: 2}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198990774632110552, guid: db333e5d407f99f48bcd25dd42c52bd1,
+        type: 2}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198446135535190496, guid: db333e5d407f99f48bcd25dd42c52bd1,
+        type: 2}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

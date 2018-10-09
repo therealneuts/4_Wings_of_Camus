@@ -52,6 +52,7 @@ public class Enemy : MonoBehaviour {
             //Instantiate and clean up death FX
             GameObject deathInstance = Instantiate(deathFX, gameObject.transform.position, Quaternion.identity);
             deathInstance.transform.localScale = Vector3.ClampMagnitude(gameObject.transform.localScale, 5);
+            deathInstance.SetActive(true);
             deathInstance.transform.parent = garbageBin;
 
             //Increment score
