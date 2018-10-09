@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4945105441755502}
   - component: {fileID: 198917382684604142}
+  - component: {fileID: 114003066643245906}
   - component: {fileID: 199091892248837848}
   m_Layer: 0
   m_Name: HitFX
@@ -34,13 +35,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1428531425629418}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.2587886, y: -4.207443, z: 345.3359}
+  m_LocalRotation: {x: 0.016174885, y: 0.40467194, z: 0.0071582957, w: -0.9142909}
+  m_LocalPosition: {x: 429.08, y: 108.56, z: -170.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114003066643245906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1428531425629418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aac0f0e125f1dc46b38c7c8acdff26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198917382684604142
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -48,7 +60,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1428531425629418}
   serializedVersion: 5
-  lengthInSec: 0.25
+  lengthInSec: 0.1
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -119,9 +131,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0.5
-      minScalar: 5
+      minMaxState: 3
+      scalar: 0.6
+      minScalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -173,8 +185,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 20
-      minScalar: 10
+      scalar: 50
+      minScalar: 20
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -664,8 +676,8 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 4
-    angle: 20
+    type: 8
+    angle: 60
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -758,7 +770,7 @@ ParticleSystem:
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 11
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -814,7 +826,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2

@@ -44,15 +44,14 @@ public class Enemy : MonoBehaviour {
     private void OnParticleCollision(GameObject other)
     {
 
-
-        GameObject hitInstance = Instantiate(hitFX, other.transform.position, other.transform.rotation * (new Quaternion(-1f, -1f, -1f, -1f)));
+        GameObject hitInstance = Instantiate(hitFX, gameObject.transform.position, Quaternion.Inverse(other.transform.rotation));
+        hitInstance.transform.parent = garbageBin;
 
         if (--healthRemaining == 0)
         {
             //Instantiate and clean up death FX
             GameObject deathInstance = Instantiate(deathFX, gameObject.transform.position, Quaternion.identity);
             deathInstance.transform.localScale = Vector3.ClampMagnitude(gameObject.transform.localScale, 5);
-            deathInstance.SetActive(true);
             deathInstance.transform.parent = garbageBin;
 
             //Increment score
