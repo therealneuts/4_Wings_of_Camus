@@ -5,15 +5,28 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    [SerializeField] int health = 3;
     [SerializeField] float colliderSizeScale = 1f;
+    [SerializeField] int scoreValue = 10;
+
+    [Header("FX")]
     [SerializeField] Transform garbageBin;
-    [SerializeField] GameObject deathPrefab;
+    [SerializeField] GameObject deathFX;
+    [SerializeField] GameObject hitFX;
+
+    ScoreBoard scoreBoard;
 
     BoxCollider BoxCollider;
 
+    int healthRemaining;
+
 	// Use this for initialization
 	void Start () {
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+
         AddNonTriggerBoxCollider();
+
+        healthRemaining = health;
 	}
 
     private void AddNonTriggerBoxCollider()
@@ -30,10 +43,23 @@ public class Enemy : MonoBehaviour {
 
     private void OnParticleCollision(GameObject other)
     {
-        GameObject deathInstance = Instantiate(deathPrefab, gameObject.transform.position, Quaternion.identity);
-        deathInstance.transform.localScale = Vector3.ClampMagnitude(gameObject.transform.localScale, 5);
-        deathInstance.SetActive(true);
-        deathInstance.transform.parent = garbageBin;
-        UnityEngine.Object.Destroy(gameObject);
+
+
+        GameObject hitInstance = Instantiate(hitFX, other.transform.position, other.transform.rotation * (new Quaternion(-1f, -1f, -1f, -1f)));
+
+        if (--healthRemaining == 0)
+        {
+            //Instantiate and clean up death FX
+            GameObject deathInstance = Instantiate(deathFX, gameObject.transform.position, Quaternion.identity);
+            deathInstance.transform.localScale = Vector3.ClampMagnitude(gameObject.transform.localScale, 5);
+            deathInstance.SetActive(true);
+            deathInstance.transform.parent = garbageBin;
+
+            //Increment score
+            scoreBoard.IncrementScore(scoreValue);
+
+            //Destroy object
+            UnityEngine.Object.Destroy(gameObject);
+        }
     }
 }
