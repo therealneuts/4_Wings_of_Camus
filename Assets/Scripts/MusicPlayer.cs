@@ -6,7 +6,10 @@ public class MusicPlayer : MonoBehaviour {
 
     private void Awake()
     {
-        Object.DontDestroyOnLoad(this);
+        if (FindObjectsOfType<MusicPlayer>().Length > 1)
+            Object.Destroy(this);
+
+        else Object.DontDestroyOnLoad(this);
     }
     // Use this for initialization
     void Start () {
